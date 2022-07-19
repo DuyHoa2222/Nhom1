@@ -1,0 +1,186 @@
+body
+{
+    background: #21242b;
+}
+.box_form
+{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+}
+.box_form form
+{
+    width: 65%;
+    height: 100%;
+}
+.banner-image
+{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-image img
+{
+    width: 40%;
+}
+.vl_title
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #00FFAB;
+}
+.vl_title h1
+{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-left: 150px;
+    letter-spacing: 2px;
+}
+.name
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.name input
+{
+    width: 250px;
+    height: 45px;
+    margin-left: 150px;
+    border: none;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#21242b;
+    font-size: 16px;
+    border: 3px solid #00FFAB;
+    transition: 0.5s;
+}
+input::placeholder
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21242b;
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+}
+.info_form
+{
+    width: 100%;
+    height: 60%;
+}
+.info_form input
+{
+    width: 650px;
+    height: 45px;
+    margin-left: 150px;
+    border: none;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21242b;
+    border: 3px solid #00FFAB;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+.info_form select
+{
+    width: 650px;
+    height: 45px;
+    margin-left: 150px;
+    border: none;
+    background: #fff;
+    border: 3px solid #00FFAB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21242b;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+em
+{
+    position: relative;
+    right: 650px;
+    top: 30px;
+    color: red;
+}
+form button
+{
+    width: 155px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    left: 400px;
+    background: none;
+    color: #00FFAB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: none;
+    transition: 0.5s;
+    border: 3px solid #00FFAB;
+}
+form button:hover
+{
+    transform: scale(1.1);
+    background: rgb(255, 255, 255);
+    color: #21242b;
+}
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.795);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sussces
+{
+    width: 40%;
+    height: 40%;
+    background: #21242b;
+    border-radius: 10px;
+    border: 5px solid #00FFAB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+}
+.sussces h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #00FFAB;
+}
+.sussces button
+{
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    margin-top: 50px;
+    border: none;
+    background: none;
+    color: #00FFAB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+    border: 3px solid #00FFAB;
+}
+.sussces button:hover
+{
+    background: #fff;
+    color: #21242b;
+    transform: scale(1.1);
+}

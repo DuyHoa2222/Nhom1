@@ -1,0 +1,789 @@
+
+
+    /* Background  */
+
+    .home
+    {
+        width: 100%;
+        height: 585px;
+        display: flex;
+        justify-content: flex-end;  
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .home h1
+    {
+        font-family: monospace;
+        text-transform: uppercase;
+        font-size: 6em;
+        text-align: center;
+        margin-top: 140px;
+        transition: 0.5s;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff ;
+        background-image: url(../image/back.png);
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        -webkit-background-clip: text;
+        margin-right: 660px;
+    }
+    @keyframes back
+{
+    100%
+    {
+        background-position: 2000px 0;
+    }
+}
+
+    .next_image 
+    {
+        position: relative;
+        width: 5%;
+        height: 170px;
+        display: flex;
+        top:200px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .next_image  div
+    {
+        transition: 0.2s linear ;
+        width: 20px;
+        margin-top: 20px;
+        height:20px;
+        border: 3px solid #fff;
+    }
+    .next_image  div:hover
+    {
+        border: 3px solid greenyellow;
+        transform: scale(1.1);
+    }
+    .start
+    {
+        position: absolute;
+        top: 450px;
+        left: 400px;
+        transition: 0.5s linear;
+        cursor: pointer;
+    }
+    .start a
+    {
+        position: relative;
+        display: inline-block;
+        padding: 10px 40px;
+        text-decoration: none;
+        border: 2px solid #fff;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.5s;
+    }
+    .start a:hover
+    {
+        background: #fff;
+        color: #064635;
+    }
+    .sale_sex
+    {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+    }
+    .sale_sex .family
+    {
+        width: 25%;
+        height: 450px;
+        margin-left: 40px;
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+    }
+    .sale_sex .image_style
+    {
+        width: 80%;
+        height: 400px;
+        transition: 0.5s;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        border: 3px solid #064635;
+    }
+    .sale_sex .family a
+    {
+        position: absolute;
+        top: 70em;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+        transition: 0.5s;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 15px;
+        border: 2px solid #21242b;
+        overflow: hidden;
+    }
+    .sale_sex .family a::before
+    {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 102%;
+        height: 10px;
+        background: #ffffff;
+        transition: 0.5s linear;
+        transform: translateY(-20px);
+    }
+    .sale_sex .family a::after
+    {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        width: 102%;
+        height: 10px;
+        background: #ffffff;
+        transition: 0.5s linear;
+        transform: translateY(20px);
+    }
+    .sale_sex .family a:hover 
+    {
+        color: #00FFAB;
+        background: #21242b;
+    }
+    .sale_sex .family a:hover::before
+    {
+        transform: translateY(0px);
+    }
+    .sale_sex .family a:hover::after
+    {
+        transform: translateY(0px);
+    }
+
+    .sale_sex .family .one
+    {
+        background-image: url(../image/women.jpg);
+        background-size: cover;
+    }
+    .sale_sex .family .two
+    {
+        background-image: url(../image/men.jpg);
+        background-size: cover;
+    }
+    .sale_sex .family .three
+    {
+        background-image: url(../image/kids.jpg);
+        background-size: cover;
+    }
+    .sale_sex .family .image_style:hover
+    {
+        transform: scale(1.1);
+    }
+    .stock
+    {
+        width: 100%;
+        height: 500px;
+        background-image: url(../image/parallax.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: start;
+        border-top: 3px solid #064635;
+        border-bottom: 3px solid #064635;
+        align-items: center;
+    }
+    .stock h1
+    {
+        font-size: 4em;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        height: 170px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        animation: smoot 20s linear infinite;
+    }
+    @keyframes smoot
+    {
+        from 
+        {
+            transform: translateX(0);
+        }
+        to 
+        {
+            transform: translateX(200px);
+        }
+    }
+    .stock h1 p
+    {
+        font-size: 0.5em;
+        position: relative;
+        top: 60px;
+    }
+    .product
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+    }
+    .card
+    {
+        margin-left: 400px;
+        position: relative;
+        right: 200px;
+        width: 300px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        position: relative;
+        transform-style: preserve-3d;
+        transform: perspective(2000px);
+        transition: 1s;
+        box-shadow: inset 300px 0 50px rgba(0,0,0,0.15),0 20px 20px rgba(0,0,0,0.15);
+    }
+    .card:hover
+    {
+        transform: perspective(2000px) translateX(50%);
+        transition: 1s;
+        box-shadow: inset 20px 0 50px rgba(0,0,0,0.15),0 10px 10px rgba(0,0,0,0.15);
+    }
+    .card .cover
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #21242b;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        transition: 1s ease-in-out;
+        transform-origin: left;
+    }
+    .card:hover .cover
+    {
+        transform: rotateY(-180deg);
+    }
+    .card .cover img
+    {
+        max-width: 100%;
+        z-index: 1;
+    }
+    .card .cover::before
+    {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 150%;
+        background: #21242b;
+        transform: rotate(36.5deg);
+        box-shadow: 0 0 0 20px #00FFAB;
+        transition: 0.5s;
+        transition-delay: 1s;
+    }
+    .card:hover .cover::before
+    {
+        width: 0;
+        box-shadow: 0 0 0 250px #00FFAB;
+        transform: rotate(143.5deg);
+    }
+    .card .details
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: #21242b;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;position: relative;
+        top: -400px;
+    }
+    .card .details h3
+    {
+        font-weight: 200;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5px 0;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .card .details h2
+    {
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #e82a5b;
+    }
+    .card .details  a
+    {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #00FFAB;
+        color: #21242b;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.5s;
+    }
+    .card .details  a:hover
+    {
+        background: rgb(255, 255, 255);
+        color: #064635;
+    }
+    .clip
+    {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wapper
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 80%;
+        height: 36.4%;
+    }
+    .listerner
+    {
+        width: 28vmin;
+        height: 28vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
+        position: relative;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background-color: #21242b;
+        border-bottom: 10px solid #00FFAB;
+    }
+    .listerner ion-icon
+    {
+        color: #00FFAB;
+        font-size: 2.5em;
+        text-align: center;
+        position: relative;
+        top: -20px;
+    }
+    .listerner span.num
+    {
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: -15px;
+    }
+    .listerner span.text
+    {
+        color: #e0e0e0;
+        font-size: 1.1em;
+        text-align: center;
+        pad: 0.7em 0;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 0;
+    }
+    .fashion_week
+    {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+    }
+    .infomation
+    {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box_size
+    {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    }
+    .box_size .imgBX
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .box_size .imgBX img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    .box_size:hover .imgBX img
+    {
+        opacity: 0;
+    }
+    .box_size .content
+    {
+        position: absolute;
+        bottom: 20px;
+        left: 10%;
+        width: 80%;
+        height: 50px;
+        background: #21242b;
+        transition: 0.5s;
+        overflow: hidden;
+        padding: 15px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .box_size:hover .content
+    {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;     
+    }
+    .box_size .content h3
+    {
+        margin: 0;
+        color: #00FFAB;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .box_size .content p
+    {
+        margin: 20px 0 0;
+        padding: 0;
+        opacity: 0;
+        line-height: 1.2em;
+        transition: 0.5s;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box_size .content a
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        position: relative;
+        top: 40px;
+        padding: 10px 20px;
+        background: #fff;
+        color: #064635;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .box_size .content a:hover
+    {
+        background: #00FFAB;
+        color: black;
+    }
+    .box_size:hover .content p
+    {
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+    .box_size:hover .content a
+    {
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+
+
+    
+    .model
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.853);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .qc
+    {
+        width: 30%;
+        height: 80%;
+        border-radius: 10px;
+        background-image: url(../image/aa.jpg);
+        background-size: cover;
+        border: 3px solid #064635;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .qc h1
+    {
+        color: #ffffff;
+        -webkit-text-stroke: 1px #064635;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 50px;
+        animation: zoom-title 10s linear infinite;
+    }
+    @keyframes zoom-title 
+    {
+        from
+        {
+            transform: scale(1);
+        }
+        to
+        {
+            transform: scale(1.2);
+        }
+    }
+    .model ion-icon
+    {
+        color: #fff;
+        font-size: 30px;
+        position: relative;
+        right: 10px;
+        bottom: 270px;
+        transition: 0.5s
+    }
+    .model ion-icon:hover
+    {
+        transform: scale(1.1);
+    }
+    .menu-mobile 
+    {
+        display: none;
+    }
+    .but_mobile
+    {
+        display: none;
+    }
+
+
+
+
+    /* Mobile < 740px */
+    @media only screen and (max-width : 46.1875em)
+    {
+        
+        #title
+        {
+            display: none;
+        }
+        .menu-mobile
+        {
+            display: block;
+            width: 100%;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.737);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;    
+            z-index: 1;
+        }
+        .anix_menu
+        {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .anix_menu ion-icon
+        {
+            font-size: 25px;
+        }
+        .anix_menu img 
+        {
+            width: 40%;
+        }
+        .active
+        {
+            width: 100%;
+            height: 50%;
+            position: fixed;
+            background: blue;
+        }
+        #menu
+        {
+            display: none;
+        }
+        .home
+        {
+            height: 100vh;
+            background-position-x: -600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .home h1
+        {
+            position: relative;
+            left:330px;
+            width: 350px;
+            bottom: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .start a
+        {
+            display: none;
+        }
+        .but_mobile
+        {
+            display: block;
+            width: 130px;
+            height: 40px;
+            border: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 60px;
+            transition: 0.5s;
+        }
+        .but_mobile:hover
+        {
+            background: #fff;
+        }
+        .but_mobile:hover a
+        {
+            color: #064635;
+        } 
+        .but_mobile a 
+        {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.5s;
+        }
+        .next_image
+        {
+            display: none;
+        }
+        /* Thể loại sản phẩm */
+
+        .sale_sex
+    {
+        width: 100%;
+        height: 1650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sale_sex .family
+    {
+        width: 85%;
+        height: 450px;
+        margin-left: 10px;
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 60px;
+    }
+    .sale_sex .image_style
+    {
+        width: 80%;
+        height: 400px;
+        transition: 0.5s;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        border: 3px solid #064635;
+        border-radius: 10px;
+    }
+    .sale_sex .family a
+    {
+        position: absolute;
+        top: 24em;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+        transition: 0.5s;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 15px;
+        border: 2px solid #21242b;
+        overflow: hidden;
+    }
+    .stock
+    {
+        width: 100%;
+        height: 300px;
+        background-image: url(../image/parallax.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: -150px;
+        display: flex;
+        justify-content: start;
+        border-top: 3px solid #064635;
+        border-bottom: 3px solid #064635;
+        align-items: center;
+    }
+    .stock h1
+    {
+        font-size: 2em;
+        color: #fff;
+        font-family: 'Lobster', cursive;
+        font-weight: 100;
+        height: 170px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        animation: smoot 20s linear infinite;
+        text-align: center;
+    }
+    @keyframes smoot
+    {
+        from 
+        {
+            transform: translateX(0);
+        }
+        to 
+        {
+            transform: translateX(0px);
+        }
+    }
+    .stock h1 p
+    {
+        font-size: 22px;
+        position: relative;
+        top: 30px;
+    }
+    /* Sản phẩm */
+    .product
+    {
+        display: none;
+    }
+    }
+    /* Table >= 740px and width < 1024px*/
+    @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) 
+    {
+        
+    }

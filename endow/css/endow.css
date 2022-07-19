@@ -1,0 +1,144 @@
+.banner
+{
+    width: 100%;
+    height: 485px;
+    display: flex;
+    background: #CEAB93;
+}
+.image_banner
+{
+    width: 50%;
+    height: 100%;
+    background-image: url(../image/1.jpg);
+    background-size: cover;
+}
+.endow
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.endow_one,.endow_two
+{
+    width: 95%;
+    height: 40%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.box_endow
+{
+    width: 45%;
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+.box_endow h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFBE9;
+    text-transform: uppercase;
+    background: #000000;
+    margin-top: 175px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.box_endow h2:hover
+{
+    background: #000;
+    color: #FFFBE9;
+}
+.background
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/6.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_1
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.title_1 h1
+{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFBE9;
+    font-size: 60px;
+    transition: 0.5s;
+}
+.title_1 h1:hover
+{
+    transform: scale(1.1);
+}
+.more_endow
+{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.vl_more
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row_one
+{
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.box_endow_row
+{
+    width: 30%;
+    height: 100%;
+    background: #AD8B73;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eslisp
+{
+    width: 100px;
+    height: 100px;
+    background: #FFFBE9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.eslisp:hover
+{
+    transform: scale(1.1);
+}
+.eslisp ion-icon
+{
+    color: #000000;
+    font-size: 30px
+}

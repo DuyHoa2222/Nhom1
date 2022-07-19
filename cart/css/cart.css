@@ -1,0 +1,169 @@
+body
+{
+    background: #ffffff;
+    transition: 0,5s;
+    color: #21242b;
+}
+.title_cart
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.vmenu
+{
+    width: 90%;
+    height: 50px;
+    border-bottom: 2px solid #21242b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vmenu p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.product
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sl_product
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #21242b;
+}
+.img
+{
+    width: 13%;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    right: 160px;
+    border: 2px solid #21242b;
+}
+.sl_product input
+{
+    width: 40px;
+    background: none;
+    border: 2px solid #21242b;
+    color: #21242b;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    right: 200px;
+}
+.sl_product p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.but_support
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.but_support button
+{
+    width: 170px;
+    height: 40px;
+    margin-left: 75px;
+    border: none;
+    border: 3px solid #21242b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #21242b;
+    background: none;
+    transition: 0.5s;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.but_support button:hover
+{
+    background: none;
+    color: #ffffff;
+    transform: scale(1.1);
+    background: #21242b;
+    border: 2px solid #00FFAB;
+}
+.go_product
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.text_give
+{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    bottom: 60px;
+}
+.baner_sale
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#banis
+{
+    position: relative;
+    right: 10px;
+    bottom: 80px;
+    width: 89%;
+    height: 48%;
+    background-image: url(../image/5.png);
+    background-size: contain;
+    position: relative;
+    border: 2px solid #21242b;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+}
+.text_give p
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 75px;
+    top: 55px;
+    color: #21242b;
+}
+.text_give button
+{
+    position: relative;
+    left: 75px;
+    top: 80px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    background: none;
+    border: 3px solid #21242b;
+    color: #21242b;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.text_give button:hover
+{
+    background: #21242b;
+    color: #ffffff;
+    border: 2px solid #00FFAB;
+    transform: scale(1.1);
+}
+
