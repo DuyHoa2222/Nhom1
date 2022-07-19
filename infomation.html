@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssall.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="infomation/css/infomation.css">
+    <title>Thông tin</title>
+</head>
+
+<body>
+    <div class="title">
+        <div class="logo">
+            <ul id="person">
+                <li><a href="">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="image_logo"><img src="index/image/logonew.png" alt=""></div>
+            <ul id="mix_menu">
+                <li><a href="">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </a></i>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="shop.html">CỬA HÀNG</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="infomation.html">THÔNG TIN<sub>
+                        <ion-icon name="star-outline" style="position: relative; top: -3px; left: 2px;"></ion-icon>
+                    </sub></a></li>
+            <li><a href="#support">HỖ TRỢ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+    <div class="barning" style="background-image: url(shop/image/back.jpg);">
+        <h1>Thông tin</h1>
+    </div>
+    <div class="banner-video">
+        <div class="video" id="vd">
+            <div class="close_video">
+                <ion-icon name="close" style="display: none;" id="close" onclick="closeaudio()"></ion-icon>
+            </div>
+            <div class="but_start_video">
+                <ion-icon name="caret-forward-circle" onclick="startaudio()" id="but_start"></ion-icon>
+                <video style="display : none;" width="100%" height="500px" id="videoPlayer" controls="controls">
+                    <!-- MP4 Video -->
+                    <source src="infomation/image/H&M Summer Season 2016_ Forever Summer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <script>
+        function startaudio() {
+            var audio = document.getElementById("videoPlayer");
+            audio.style = `display : block; position : relative; right : 20px`;
+            audio.play();
+            document.getElementById("but_start").style = `display : none`;
+            document.getElementById("close").style = `display : block`;
+        }
+        function closeaudio() {
+            var audio = document.getElementById("videoPlayer");
+            audio.style = `display : none;`;
+            audio.pause();
+            document.getElementById("but_start").style = `display : block`;
+            document.getElementById("close").style = `display : none`;
+        }
+    </script>
+
+    <div class="info-witch">
+        <div class="text-witch">
+            <div class="text-witch-images">
+                <h1>Một đôi mắt là <br> một nghệ thuật ẩn</h1>
+            </div>
+        </div>
+        <div class="image-witch">
+            <div class="image-witch-boder">
+                <img src="infomation/image/b7 (1).png" alt="" id="dove1">
+                <h1>Phẩm chất của chúng tôi</h1>
+                <p>Tiềm năng vững mạnh, sự phát triển liên tục. <br>
+                    Ý tưởng của chúng tôi là vô tận, chúng tôi luôn hướng <br>
+                    theo phương châm "Bông hoa đẹp nhất là bông hoa biết nở rộ" <br>
+                    Nghệ thuật là vô tận và trái tim dành cho nó <br>
+                    là bất diệt. Đến với chúng tôi, tôi sẽ đưa bạn <br>
+                    trở thành đóa hoa đẹp nhất.
+                </p>
+                <img src="infomation/image/b7 (2).png" alt="" id="dove2">
+            </div>
+        </div>
+    </div>
+    <div class="title-chart">
+        <h4>Theo dõi</h4>
+        <h1>Sự thay đổi của chúng tôi</h1>
+    </div>
+    <div class="brand-conect">
+        <div class="brand-conect_untop">
+            <div class="chart">
+                <div class="chart-box">
+                    <div class="colum-one">
+                        <p>20%</p>
+                    </div>
+                    <div class="column-two">
+                        <p>50%</p>
+                    </div>
+                </div>
+                <div class="chart-box">
+                    <div class="colum-one class-2">
+                        <p>65%</p>
+                    </div>
+                    <div class="column-two class-3">
+                        <p>89%</p>
+                    </div>
+                </div>
+                <div class="chart-box">
+                    <div class="colum-one class-4">
+                        <p>34%</p>
+                    </div>
+                    <div class="column-two class-5">
+                        <p>77%</p>
+                    </div>
+                </div>
+                <div class="chart-box">
+                    <div class="colum-one class-6">
+                        <p>63%</p>
+                    </div>
+                    <div class="column-two class-7">
+                        <p>78%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="name-chart">
+                <p style="position: relative; left: 90px;">Doanh thu</p>
+                <p style="position: relative; left: 30px;">Phổ biến</p>
+                <p style="position: relative; right: 30px;">Theo dõi</p>
+                <p style="position: relative; right: 80px;">Tương tác</p>
+            </div>
+        </div>
+        <div class="brand-conect_unbottom">
+            <div class="window-brand">
+                <h1>Đội của chúng tôi</h1>
+                <div class="person-brand">
+                    <div class="avatar-person"
+                        style="background-image:url(infomation/image/kien.jpg) ; background-size: cover;">
+                        <p>Thiết kế</p>
+                    </div>
+                    <div class="avatar-person"
+                        style="background-image:url(infomation/image/cb540b6415c6d4988dd7.jpg) ; background-size: cover; background-position-x: -50px;">
+                        <p>Lãnh đạo</p>
+                    </div>
+                    <div class="avatar-person"
+                        style="background-image:url(infomation/image/nga.jpg) ; background-size: cover;">
+                        <p>Ngồi chơi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="google-map">
+        <div class="box-google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443592367578!2d106.62563971424665!3d10.853826360729517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2sQuang%20Trung%20Software%20City!5e0!3m2!1sen!2s!4v1654063375734!5m2!1sen!2s"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <canvas id="canvas1"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas1");
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth; // lấy chiều rộng
+        canvas.height = window.innerHeight; // lấy chiều cao
+
+        let particlesArray; // biến chứa các hạt
+
+        // Lấy vị trí của chuột
+        let mouse = { // Khai báo biến chuột
+            x: null,
+            y: null,
+            radius: (canvas.height / 80) * (canvas.width / 80)
+        } // Lấy tọa độ của chuột
+
+        window.addEventListener('mousemove', // lắng nghe sự kiện khi ta di chuyển chuột
+            function (event) { // Khi di chuyển chuột thì hàm này sẽ được gọi
+                mouse.x = event.x;
+                mouse.y = event.y;
+            } // Công dụng của nó là gắn tọa độ vô chuột
+        );
+
+        // Tạo các hạt
+        class Particle { // Tạo 1 lớp chứa 6 thuộc tính cảu hạt
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x; // x và y là tọa độ của hạt
+                this.y = y;
+                this.directionX = directionX; // hướng đi của hạt 
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            // Vẽ các hạt riêng lẽ
+            draw() { // Khai báo hàm vẽ
+                ctx.beginPath(); // Tạo đường dẫn cho nó
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false); // điểm bắt đầu và kết thúc hình tròn
+                ctx.fillStyle = '#8C5523'; // Lấy màu 
+                ctx.fill(); // Đổ màu lên hạt
+            }
+            // check vị trí hạt, check vị trí chuột, di chuyển hạt với vẻ hạt
+            update() {
+                //Không cho hạt đi ra ngoài canvas
+                if (this.x > canvas.width || this.x < 0) {
+                    this.directionX = -this.directionX;
+                }
+                if (this.y > canvas.height || this.y < 0) {
+                    this.directionY = -this.directionY;
+                }
+
+                //kiểm tra hạt có nằm trong bán kính của chuột không
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < mouse.radius + this.size) {
+                    if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
+                        this.x += 10;
+                    }
+                    if (mouse.x > this.x && this.x > this.size * 10) {
+                        this.x -= 10;
+                    }
+                    if (mouse.y < this.y && this.y < canvas.height - this.size * 10) {
+                        this.y += 10;
+                    }
+                    if (mouse.y > this.y && this.y > this.size * 10) {
+                        this.y -= 10;
+                    }
+                }
+                // di chuyển hạt
+                this.x += this.directionX;
+                this.y += this.directionY;
+                // draw particle
+                this.draw();
+
+            }
+        }
+
+        // mảng hạt
+        function init() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 20000; // số lượng hạt
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 5) + 1; // kích thước hạt random 1-5
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2); // random tọa độ
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 5) - 2.5; // random tọa độ di chuyển
+                let directionY = (Math.random() * 5) - 2.5;
+                let color = '#8C5523';
+
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        // kiểm tra nếu khoảng cách giữa các hạt gần nhau sẽ vẽ đường line
+        function connect() {
+            let opacityValue = 1; // giá trị tỏng suốt
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
+                        + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+                        opacityValue = 1 - (distance / 20000);
+                        let dx = mouse.x - particlesArray[a].x; // vị trí chuột trừ vị trí điểm
+                        let dy = mouse.y - particlesArray[a].y;
+                        let mouseDistance = Math.sqrt(dx * dx + dy * dy);
+                        if (mouseDistance < 180) { // nếu hạt ở gần chuột đg line đỏ còn xa đường line xanh
+                            ctx.strokeStyle = 'rgba(255,0,0,' + opacityValue + ')';
+                        } else {
+                            ctx.strokeStyle = 'rgba(0,0,255,' + opacityValue + ')';
+                        }
+                        ctx.lineWidth = 1; //vẽ đường 
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+
+                        ctx.lineWidth = 1;
+                        ctx.strokeStyle = 'rgba(255,255,0,0.03)';
+                        ctx.beginPath();
+                        ctx.moveTo(mouse.x, mouse.y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+
+            }
+        }
+        // vòng lặp cho hiệu ứng
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connect();
+        }
+        // resize event
+        window.addEventListener('resize',
+            function () {
+                canvas.width = innerWidth;
+                canvas.height = innerHeight;
+                mouse.radius = ((canvas.height / 80) * (canvas.height / 80));
+                init();
+            }
+        );
+
+        // mouse out event
+        window.addEventListener('mouseout',
+            function () {
+                mouse.x = undefined;
+                mouse.x = undefined;
+            }
+        )
+
+        init();
+        animate();
+    </script>
+
+    <div class="infomation_person" id="support">
+        <div class="title">
+            <h1>ĐĂNG KÝ THÔNG TIN HỖ TRỢ</h1>
+        </div>
+        <div class="email">
+            <div class="but">
+                <input type="text" placeholder="Địa chỉ Email">
+            </div>
+        </div>
+        <div class="buton">
+            <div class="middle">
+                <button class="btn btn1">Gửi</button>
+            </div>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="coating">
+        <div class="coat_one">
+            <h1>GIOIA <br>
+            </h1>
+        </div>
+        <div class="coat_two">
+            <div class="flix one">
+                <article>CÔNG TY</article>
+                <p>
+                    Giới thiệu <br>
+                    Chúng tôi đang thuê <br>
+                    Chương trinhg liên kết <br>
+                    Các đường liên kết <br>
+                    Tài khoản doanh nghiệp
+                </p>
+            </div>
+            <div class="flix two">
+                <article>HỖ TRỢ</article>
+                <p>
+                    Gửi email cho chúng tôi <br>
+                    Giúp đỡ và FAQ <br>
+                    Thực hiện trở lại <br>
+                    Chính sách liên kết <br>
+                    Giỏ quà
+                </p>
+            </div>
+            <div class="flix three">
+                <article>LIÊN KẾT NHANH</article>
+                <p>
+                    Điều khoan và điều kiện <br>
+                    Chính sách bảo mật <br>
+                    Chi nhánh <br>
+                    Chính sách hoàn trả
+                </p>
+            </div>
+            <div class="flix four">
+                <article>LIÊN KẾT</article>
+                <p>
+                    1 Wintergreen Dr.Huntley IL 60142, Usa <br>
+                    minkienmdc2003@gmail.com <br>
+                    0985940157
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-chat">
+        <div class="chat">
+            <ion-icon name="chatbubble-ellipses-outline" id="open-chat"></ion-icon>
+        </div>
+        <div class="messeger" id="messeger">
+            <div class="screen">
+                <div class="name-bot">
+                    <h3>
+                        CHAT BOT
+                    </h3>
+                    <ion-icon name="close-outline" id="closechat"></ion-icon>
+                </div>
+                <div class="talk">
+                    <div class="chat-auto">
+                        <p id="one"></p>
+                    </div>
+                    <div class="chat-auto">
+                        <p id="two"></p>
+                    </div>
+                    <div class="chat-auto">
+                        <p id="three"></p>
+                        </p>
+                    </div>
+                    <div class="chat-auto">
+                        <p id="four"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="enter-chat">
+                <input type="text" placeholder="Nhập tin nhắn">
+            </div>
+        </div>
+    </div>
+    <script>
+        const open_chat = document.getElementById("open-chat");
+        const messeger = document.getElementById("messeger");
+        const closechat = document.getElementById("closechat");
+        index = 0;
+        open_chat.onclick = function () {
+            messeger.style = `
+                display: block;
+                width: 300px;
+                height: 400px;
+                background: #fff;
+                border: 2px solid #21242b;
+                position: absolute;
+                bottom:  0;
+                right: 50px;
+            `;
+        }
+        closechat.onclick = function () {
+            messeger.style = `display : none;`;
+        }
+        function chat() {
+            if (index == 0) {
+                document.getElementById("one").innerHTML = 'Hello anh kiên đẹp trai';
+                index++;
+            }
+            else if (index == 1) {
+                document.getElementById("two").innerHTML = 'Anh cần giúp chuyện gì không nhò';
+                index++;
+            }
+            else if (index == 2) {
+                document.getElementById("three").innerHTML = 'Rep nhanh coi thằng khốn';
+                index++;
+            }
+            else {
+                document.getElementById("four").innerHTML = 'Mình chia tay đi';
+                index = 0;
+            }
+        }
+        setInterval(chat(), 5000);
+
+        // --------------------------------- Canvas ---------------------------- 
+    </script>
+</body>
+
+</html>

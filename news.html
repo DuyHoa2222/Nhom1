@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="news/style/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya&family=Grape+Nuts&family=Lobster&family=Macondo&family=Nunito:wght@200&family=Poppins:wght@100&family=Smooch&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="cssall.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="logo">
+            <ul id="person">
+                <li><a href="">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="image_logo"><img src="index/image/logonew.png" alt=""></div>
+            <ul id="mix_menu">
+                <li><a href="">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </a></i>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="shop.html">CỬA HÀNG</a></li>
+            <li><a href="endow.html">ƯU ĐÃI<sup>
+                        <ion-icon name="star-outline" style="position: relative; top: -3px; left: 2px;"></ion-icon>
+                    </sup></a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="infomation.html">THÔNG TIN</a></li>
+            <li><a href="#support">HỖ TRỢ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+    <div class="barning" style="background-image: url(shop/image/back.jpg);">
+        <h1>Tin tức</h1>
+    </div>
+    <div class="show-canvas">
+        <canvas id="canvas" width="1532" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(20, -20, 1500, 0);
+    grd.addColorStop(0, "rgba(250, 176, 27, 1)");
+    grd.addColorStop(0.5, "rgba(175, 121, 208, 1)");
+    grd.addColorStop(1, "rgba(4, 129, 155, 1)");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 50, 1258, 4);
+</script>

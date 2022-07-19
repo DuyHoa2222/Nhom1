@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ nữ</title>
+    <link rel="stylesheet" href="cssall.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="shop_product/cscs/shop_product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title" id="title">
+        <div class="logo">
+            <ul id="person">
+                <li><a href="">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="image_logo"><img src="index/image/logonew.png" alt=""></div>
+            <ul id="mix_menu">
+                <li><a href="">
+                        <ion-icon name="search-outline" id="icon-search" onclick="return timkiem()"></ion-icon>
+                    </a></li>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm" id="search">
+                </div>
+                <li><a href="">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="heart-outline" onclick="return qc()"></ion-icon>
+                    </a></i>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <header>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="shop.html">CỬA HÀNG</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="infomation.html">THÔNG TIN<sub>
+                        <ion-icon name="star-outline" style="position: relative; top: -3px; left: 2px;"></ion-icon>
+                    </sub></a></li>
+            <li><a href="#support">HỖ TRỢ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+    <div class="barning" style="background-image: url(shop/image/back.jpg);">
+        <h1>Phụ nữ</h1>
+    </div>
+    <div class="box_product">
+        <div class="check_product">
+            <div class="box_info">
+                <h1>Bộ lọc giá</h1>
+                <input type="range" min="0" max="1000000" value="0" id="myRange">
+                <p id="demo"></p>
+                <button>LỌC</button>
+                <script>
+                    var slider = document.getElementById("myRange");
+                    let dollarUSLocale = Intl.NumberFormat('en-US');
+                    var ouput = document.getElementById("demo");
+                    ouput.innerHTML = slider.value;
+                    slider.oninput = function () {
+                        ouput.innerHTML = `Giá : ${dollarUSLocale.format(this.value)} VNĐ`;
+                    }
+                </script>
+            </div>
+            <div class="box_info" style="height: 30%;">
+                <h1>Thể loại</h1>
+                <h5>Phụ kiện <br> Túi xách <br> Bán chạy nhất <br> Nam & Nữ <br> Quần áo <br>
+                    Thẻ quà tặng <br> Điện tử <br> Trẻ em <br> Thanh lịch <br> Giày sành điệu <br>
+                    Đăng ký <br> Áo len <br> Xu hướng phụ nữ
+                </h5>
+            </div>
+            <div class="box_info">
+                <h1>Màu sắc</h1>
+                <h5>
+                    Màu be(1) <br> Màu xanh lam(5) <br> Màu đỏ(2) <br> Màu trắng(3)
+                </h5>
+            </div>
+            <div class="box_info">
+                <h1>Kích thước</h1>
+                <h5>
+                    Size M(6) <br> Size S(6) <br> Size L(5) <br> Size XL(6)
+                </h5>
+            </div>
+            <div class="box_info">
+                <h1>Thẻ sản phẩm</h1>
+                <h5>Cơ bản/ Danh mục/ Thương hiệu/ Cổ điển/ Thanh lịch/ Mùa thu/ Thời trang hiện đại/
+                    Phong cách thời trang/ Phong cách mới/ Phong cách bất ngờ/ Mùa hè.
+                </h5>
+            </div>
+            <div class="box_info"
+                style="background-image: url(shop_product/image/10.jpeg); background-size: cover; border: none;">
+            </div>
+        </div>
+        <div class="shop_product">
+            <div class="suggest">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <input type="text" placeholder="Địa điểm">
+                <select name="" id="">
+                    <option value="">Trẻ em</option>
+                    <option value="">Phụ nữ</option>
+                    <option value="">Đàn ông</option>
+                </select>
+            </div>
+            <div class="product_el">
+                <div class="product_row">
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b1.jpg); background-size: cover;">
+                        <h1>Áo khoác Paris</h1>
+                        <p>450$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b2.jpg); background-size: cover;">
+                        <h1>Áo khoác Paris</h1>
+                        <p>450$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b3.jpg); background-size: cover;">
+                        <h1>Bông tai Xel</h1>
+                        <p>250$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+                </div>
+
+
+                <div class="product_row">
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b4.jpg); background-size: cover;">
+                        <h1>Nhẫn goden</h1>
+                        <p>970$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b5.jpg); background-size: cover;">
+                        <h1>Vest vias</h1>
+                        <p>480$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b6.jpg); background-size: cover;">
+                        <h1>Vest hoàng gia</h1>
+                        <p>850$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+                </div>
+
+                <div class="product_row">
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b7.jpg); background-size: cover;">
+                        <h1>Vest Hàn</h1>
+                        <p>480$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b8.jpg); background-size: cover;">
+                        <h1>Đầm đen</h1>
+                        <p>660$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+
+                    <div class="vlproduct"
+                        style="background-image: url(shop_product/image/b9.jpg); background-size: cover;">
+                        <h1>Váy họa mi</h1>
+                        <p>930$</p>
+                        <a href="shopwomen.html"><button>mua</button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="infomation_person" id="support" style="margin-top: 50px;">
+        <div class="title">
+            <h1>ĐĂNG KÝ THÔNG TIN HỖ TRỢ</h1>
+        </div>
+        <div class="email">
+            <div class="but">
+                <input type="text" placeholder="Địa chỉ Email">
+            </div>
+        </div>
+        <div class="buton">
+            <button class="btn btn1">Gửi</button>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="coating">
+        <div class="coat_one">
+            <h1>GIOIA
+            </h1>
+        </div>
+        <div class="coat_two">
+            <div class="flix one">
+                <article>CÔNG TY</article>
+                <p>
+                    Giới thiệu <br>
+                    Chúng tôi đang thuê <br>
+                    Chương trinhg liên kết <br>
+                    Các đường liên kết <br>
+                    Tài khoản doanh nghiệp
+                </p>
+            </div>
+            <div class="flix two">
+                <article>HỖ TRỢ</article>
+                <p>
+                    Gửi email cho chúng tôi <br>
+                    Giúp đỡ và FAQ <br>
+                    Thực hiện trở lại <br>
+                    Chính sách liên kết <br>
+                    Giỏ quà
+                </p>
+            </div>
+            <div class="flix three">
+                <article>LIÊN KẾT NHANH</article>
+                <p>
+                    Điều khoan và điều kiện <br>
+                    Chính sách bảo mật <br>
+                    Chi nhánh <br>
+                    Chính sách hoàn trả
+                </p>
+            </div>
+            <div class="flix four">
+                <article>LIÊN KẾT</article>
+                <p>
+                    1 Wintergreen Dr.Huntley IL 60142, Usa <br>
+                    minkienmdc2003@gmail.com <br>
+                    0985940157
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="model" id="model">
+        <ion-icon name="close-circle-outline" onclick="off_qc()"></ion-icon>
+        <div class="qc">
+            <h1>
+                <div style="font-size: 60px;">
+                    Ưu thích nhất
+                </div>
+                Lender - Hinocl
+            </h1>
+        </div>
+    </div>
+    <script>
+        function qc() {
+            document.getElementById("menu").style = `display : none`;
+            document.getElementById('model').style =
+                `
+            display : block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.853);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            `;
+        }
+        function off_qc() {
+            document.getElementById("menu").style = `display : block; 
+            width: 100%;
+            height: 3em;
+            background: #064635;
+            justify-content: center;
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            `;
+            document.getElementById('model').style = `display : none`;
+        }
+    </script>
+</body>
+
+</html>

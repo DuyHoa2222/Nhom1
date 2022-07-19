@@ -1,0 +1,311 @@
+.box
+{
+    width: 100%;
+    height: 82vh;
+    background: #21242b;
+    display: flex;
+    justify-content: center;
+}
+.box-product
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.box-product-image
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image
+{
+    background-image: url(../image/Thiết\ kế\ chưa\ có\ tên\ \(2\).png);
+    width: 60%;
+    height: 80%;
+    background-size: cover;
+    border: 5px solid #00FFAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s linear;
+    position: relative;
+    flex-direction: column;
+}
+.image::before
+{
+    content: '';
+    position: absolute;
+    top: -0.9em;
+    left: 0.5em;
+    width: 20%;
+    height: 5%;
+    transition: 1s linear;
+    background: #00FFAB;
+}
+.image::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.9em;
+    right: 0.5em;
+    width: 20%;
+    height: 5%;
+    background: #00FFAB;
+    transition: 1s linear;
+}
+.image h1
+{
+    color: #21242b00;
+    font-size: 3em;
+    transform: translateY(5.7em);
+    transition: 1s linear;
+}
+.image:hover::before
+{
+    transform: translateX(230px);
+    background: #fff;
+}
+.image:hover::after
+{
+    transform: translateX(-230px);
+    background: #fff;
+}
+.image:hover
+{
+    border: 5px solid #fff;
+}
+.image:hover h1
+{
+    transform: translateY(-1.5em);
+    color: #fff;
+}
+.image a
+{
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 30px;
+    transition: 1s linear;
+    font-size: 1.1em;
+    color: #21242b00;
+    transform: translateY(13em);
+}
+.image:hover a
+{
+    border: 3px solid #00FFAB;
+    background: #fff;
+    transform: translateY(-2em);
+    color: #21242b;
+}
+.image a:hover
+{
+    background: #21242b;
+    border: 3px solid #fff;
+    color: #00FFAB;
+}
+.box-product-content
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.text
+{
+    width: 80%;
+    height: 80%;
+}
+.text h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.text h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+.text h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.text label
+{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    font-size: 0.9em;
+}
+.text .box-color
+{
+    display: flex;
+}
+.text .color
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    margin-left: 0.4em;
+    position: relative;
+    right: 10px;
+    transition: 0.5s;
+}
+.text .color:hover
+{
+    border: 3px solid #fff;
+}
+.text button
+{
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    background: #00FFAB;
+    border: none;
+    font-size: 0.9em;
+    color: #21242b;
+    transition: 0.5s;
+}
+.text button:hover
+{
+    background: #fff;
+    color: #21242b;
+}
+.infomation-produtct
+{
+    width: 20em;
+    height: 13em;
+    position: relative;
+    top: 1.8em;
+}
+.infomation-produtct .info 
+{
+    padding: 5px ; 
+    width: 19em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+} 
+.infomation-produtct .info h3
+{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.infomation-produtct .info ion-icon
+{
+    font-size: 1.5em;
+    color: #fff;
+    transition: 0.5s;
+}
+.infomation-produtct .info ion-icon:hover
+{
+    color: #00FFAB;
+}
+.infomation-produtct .info-text
+{
+    display: none;
+}
+.infomation-produtct .info-text p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+.list
+{
+    border-top: 2px solid #fff;
+}
+#Quality
+{
+    width: 5em;
+    height: 2.5em;
+    margin-bottom: 1.4em;
+    text-align: center;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer
+{
+    width: 100%;
+    height: 10em;
+    background: #21242b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-page
+{
+    width: 80%;
+    height: 50%;
+    border-bottom: 2px solid #00FFAB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bank
+{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-page-web
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-page-web p
+{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-bank-web
+{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-bank-contact
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bank-web p
+{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bank
+{
+    width: 8%;
+    height: 1.8em;
+}
+.seperate
+{
+    width: 100%;
+    height: 9vh;
+    background: #21242b;
+}

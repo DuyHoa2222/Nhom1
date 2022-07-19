@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="cssall.css">
+    <link rel="stylesheet" href="cart/css/cart.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <div class="logo">
+            <ul id="person">
+                <li><a href="">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="image_logo"><img src="index/image/logonew.png" alt=""></div>
+            <ul id="mix_menu">
+                <li><a href="">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </a></i>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="shop.html">CỬA HÀNG</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="infomation.html">THÔNG TIN<sub>
+                        <ion-icon name="star-outline" style="position: relative; top: -3px; left: 2px;"></ion-icon>
+                    </sub></a></li>
+            <li><a href="#support">HỖ TRỢ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+    <div class="barning" style="background-image: url(shop/image/back.jpg);">
+        <h1>Giỏ hàng</h1>
+    </div>
+
+
+    <div class="title_cart">
+        <div class="vmenu">
+            <p style="position: relative; left: 150px;">Sản phẩm</p>
+            <p style="position: relative; left: 30px;">Giá</p>
+            <p style="position: relative; left: -50px;">Số lượng</p>
+            <p style="position: relative; left: -150px;">Thành tiền</p>
+        </div>
+    </div>
+    <div class="product" id="hit">
+        <div class="sl_product">
+            <ion-icon onclick="delete_product()" name="remove-circle-outline" style="font-size: 30px; color: #21242b;">
+            </ion-icon>
+            <div class="img" style="background-image:url(cart/image/1.jpg) ; background-size: cover;"></div>
+            <p style="position: relative; right: 235px;">380.000VNĐ</p>
+            <input type="number" value="1" min="0">
+            <p style="position: relative; right: 145px;">380.000VNĐ</p>
+        </div>
+    </div>
+    <div class="product" id="hit1">
+        <div class="sl_product">
+            <ion-icon onclick="delete_product1()" name="remove-circle-outline" style="font-size: 30px; color: #21242b;">
+            </ion-icon>
+            <div class="img" style="background-image:url(cart/image/2.jpg) ; background-size: cover;"></div>
+            <p style="position: relative; right: 235px;">200.000VNĐ</p>
+            <input type="number" value="2" min="0">
+            <p style="position: relative; right: 145px;">400.000VNĐ</p>
+        </div>
+    </div>
+    <script>
+        function delete_product() {
+            document.getElementById("hit").style = `display : none`;
+
+        }
+        function delete_product1() {
+            document.getElementById("hit1").style = `display : none`;
+
+        }
+    </script>
+
+    <div class="but_support">
+        <button>Mã giảm giá</button>
+        <button>Áp dụng COUPONUP</button>
+        <button>Giỏ hàng ngày</button>
+    </div>
+    <div class="go_product">
+        <div class="text_give">
+            <p>Tổng phụ: 780.000VNĐ</p>
+            <p>____________________</p>
+            <p style="margin-top: 30px;">Vận chuyển: Min Kiên</p>
+            <p>Miễn phí vận chuyển</p>
+            <p>Vận chuyển về Việt Nam</p>
+            <p>Thay đổi địa chỉ</p>
+            <p style="margin-top: 30px;">____________________</p>
+            <p style="margin-top: 10px;">Tổng: 780.000VNĐ</p>
+            <button>Tiến hành kiểm tra</button>
+        </div>
+        <div class="baner_sale">
+            <div class="banis" id="banis"></div>
+        </div>
+    </div>
+    9
+    <canvas id="canvas" width="1515" height="100"></canvas>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(20, -20, 1500, 0);
+        grd.addColorStop(0, "#21242b");
+        grd.addColorStop(0.5, "#00FFAB");
+        grd.addColorStop(1, "#21242b");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 50, 1515, 4);
+    </script>
+
+    <div class="infomation_person" id="support">
+        <div class="title">
+            <h1>ĐĂNG KÝ THÔNG TIN HỖ TRỢ</h1>
+        </div>
+        <div class="email">
+            <div class="but">
+                <input type="text" placeholder="Địa chỉ Email">
+            </div>
+        </div>
+        <div class="buton">
+            <div class="middle">
+                <button class="btn btn1">Gửi</button>
+            </div>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="coating">
+        <div class="coat_one">
+            <h1>GIOIA <br>
+                <p> Võ Ngọc Min Kiên</p>
+            </h1>
+        </div>
+        <div class="coat_two">
+            <div class="flix one">
+                <article>CÔNG TY</article>
+                <p>
+                    Giới thiệu <br>
+                    Chúng tôi đang thuê <br>
+                    Chương trinhg liên kết <br>
+                    Các đường liên kết <br>
+                    Tài khoản doanh nghiệp
+                </p>
+            </div>
+            <div class="flix two">
+                <article>HỖ TRỢ</article>
+                <p>
+                    Gửi email cho chúng tôi <br>
+                    Giúp đỡ và FAQ <br>
+                    Thực hiện trở lại <br>
+                    Chính sách liên kết <br>
+                    Giỏ quà
+                </p>
+            </div>
+            <div class="flix three">
+                <article>LIÊN KẾT NHANH</article>
+                <p>
+                    Điều khoan và điều kiện <br>
+                    Chính sách bảo mật <br>
+                    Chi nhánh <br>
+                    Chính sách hoàn trả
+                </p>
+            </div>
+            <div class="flix four">
+                <article>LIÊN KẾT</article>
+                <p>
+                    1 Wintergreen Dr.Huntley IL 60142, Usa <br>
+                    minkienmdc2003@gmail.com <br>
+                    0985940157
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
