@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="cssall.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="signin/css/signin.css">
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="logo">
+            <a href="index.html">gioia</a>
+        </div>
+        <div class="form">
+            <div class="form_sign_in">
+                <div class="box_sign_in">
+                    <h1>Đăng ký</h1>
+                    <form action="">
+                        <div class="input">
+                            <input type="text" placeholder="Email" id="mail">
+                            <em id="error1"></em>
+                            <input type="password" placeholder="Mật khẩu" id="pass">
+                            <em id="error2"></em>
+                            <input type="password" placeholder="Nhập lại mật khẩu" id="repass">
+                            <em id="error3"></em>
+                            <input type="text" placeholder="Số điện thoại" id="phonenumber">
+                            <em id="error4"></em>
+                            <div class="but">
+                                <button onclick="return navigation()"><a href="#" id="axc">Đăng ký</a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-form"></div>
+    <script>
+        const mail = document.getElementById("mail");
+        const pass = document.getElementById("pass");
+        const repass = document.getElementById("repass");
+        const phonenumber = document.getElementById("phonenumber");
+        const perfectmail = /^[A-Za-z][\w$.]+@[\w]+\.\w+$/;
+        const perfect_number = /^0[0-9\-\+]{9}$/;
+
+        function navigation() {
+            let success = true;
+            if (!perfectmail.test(mail.value)) {
+                document.getElementById("error1").innerHTML = "Email không đúng định dạng";
+                success = false;
+            }
+            else {
+                document.getElementById("error1").innerHTML = "";
+            }
+
+
+            if (pass.value.length < 6) {
+                document.getElementById("error2").innerHTML = "Mật khẩu có ít nhất 6 ký tự";
+                success = false;
+            }
+            else {
+                document.getElementById("error2").innerHTML = "";
+            }
+
+            if (repass.value != pass.value || repass.value == "") {
+                document.getElementById("error3").innerHTML = "Mật khẩu không trùng khớp";
+                success = false;
+            }
+            else {
+                document.getElementById("error3").innerHTML = "";
+            }
+
+            if (!perfect_number.test(phonenumber.value)) {
+                document.getElementById("error4").innerHTML = "Số điện thoại phải có 10 số";
+                success = false;
+            }
+            else {
+                document.getElementById("error4").innerHTML = "";
+            }
+
+            if (success == true) {
+                const next_tab = document.getElementById("axc");
+                next_tab.href = "index.html";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index/css and js/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya&family=Grape+Nuts&family=Lobster&family=Macondo&family=Nunito:wght@200&family=Poppins:wght@100&family=Smooch&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="cssall.css">
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="anix_menu">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <img src="index/image/logonew.png" alt="">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="title" id="title">
+        <div class="logo">
+            <ul id="person">
+                <li><a href="">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <div class="image_logo"><img src="index/image/logonew.png" alt=""></div>
+            <ul id="mix_menu">
+                <li><a href="">
+                        <ion-icon name="search-outline" id="icon-search" onclick="return timkiem()"></ion-icon>
+                    </a></li>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm" id="search">
+                </div>
+                <li><a href="">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="heart-outline" onclick="return qc()"></ion-icon>
+                    </a></i>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script>
+        let menu_xl = document.getElementById("menu_xl");
+        menu_xl.onclick = function () {
+            menu_xl.classList.toggle("active");
+        }
+    </script>
+    <script>
+        let iconsearch = document.getElementById("icon-search");
+        let search = document.getElementById("search");
+        index = 0;
+        function timkiem() {
+            if (index == 0) {
+                search.style = `
+                display : block;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                border: 2px solid #064635;            
+            `;
+                index++;
+            }
+            else {
+                search.style = `display : none`;
+                index = 0;
+            }
+        }
+    </script>
+    <header id="menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="shop.html">CỬA HÀNG</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="infomation.html">THÔNG TIN<sub>
+                        <ion-icon name="star-outline" style="position: relative; top: -3px; left: 2px;"></ion-icon>
+                    </sub></a></li>
+            <li><a href="#support">HỖ TRỢ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </header>
+    <div class="slideshow">
+        <div class="home" id="vlback" style="background-image: url(index/image/4.jpg);">
+            <div class="chu">
+                <h1>KỶ NIỆM MÙA HÈ <br>
+                    <div style="font-size: 50px;" id="gg">GIẢM GIÁ 30%</div>
+                </h1>
+            </div>
+            <div class="next_image">
+                <div id="first" onclick="navigation(-1)">
+                </div>
+                <div id="second" onclick="navigation(1)">
+                </div>
+            </div>
+            <div class="but_mobile">
+                <a href="">Mua ngay</a>
+            </div>
+
+            <div class="start">
+                <a href="#">
+                    Mua ngay</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const image = [
+            "index/image/12.jpg",
+            "index/image/4.jpg"
+        ]
+        const prev = document.getElementById("first");
+        const next = document.getElementById("second");
+        let index = 0;
+        function navigation(value) {
+            if (value === -1) {
+                if (index == 0) {
+                    index = image.length - 1;
+                }
+                else {
+                    index--;
+                }
+            }
+            else if (value === 1) {
+                if (index === image.length - 1) {
+                    index = 0;
+                }
+                else {
+                    index++;
+                }
+            }
+            document.getElementById("vlback").style = `background-image: url(${image[index]});`
+        }
+    </script>
+    <div class="sale_sex">
+        <div class="women family">
+            <div class="image_style one"></div>
+            <a href="shop_product.html">phụ nữ</a>
+        </div>
+        <div class="men family">
+            <div class="image_style two"></div>
+            <a href="shop_product.html">Đàn ông</a>
+        </div>
+        <div class="kids family">
+            <div class="image_style three"></div>
+            <a href="shop_product.html">trẻ em</a>
+        </div>
+    </div>
+    <div class="stock">
+        <h1>
+            <p>Sản phẩm mới</p> <br>TRANG SỨC SANG TRỌNG
+        </h1>
+    </div>
+    <div class="product-mobile">
+
+    </div>
+    <div class="product">
+        <div class="card" id="cart-one">
+            <div class="cover">
+                <img style="width: 250px;" src="index/image/watch1.png" alt="">
+            </div>
+            <div class="details">
+                <div>
+                    <img style="width: 250px;" src="index/image/watch.png" alt="">
+                    <h3>Đồng hồ Goden</h3>
+                    <h2><sup>$</sup>450</h2>
+                    <a href="">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="cart-two">
+            <div class="cover">
+                <img style="width: 250px;" src="index/image/nhan (1).png" alt="">
+            </div>
+            <div class="details">
+                <div>
+                    <img style="width: 250px;" src="index/image/nhan (2).png" alt="">
+                    <h3>Nhẫn diamon</h3>
+                    <h2><sup>$</sup>600</h2>
+                    <a href="">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stock" style="background-image: url(index/image/parallax2.jpg);">
+        <h1>
+            <p>Mức độ phổ biến!</p> <br> THEO DÕI TRONG TUẦN
+        </h1>
+    </div>
+    <div class="clip">
+        <div class="wapper">
+            <div class="listerner">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <span class="num" data-val="350">000</span>
+                <span class="text">Theo dõi</span>
+            </div>
+            <div class="listerner">
+                <ion-icon name="logo-youtube"></ion-icon>
+                <span class="num" data-val="250">000</span>
+                <span class="text">Theo dõi</span>
+            </div>
+            <div class="listerner">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span class="num" data-val="325">000</span>
+                <span class="text">Theo dõi</span>
+            </div>
+            <div class="listerner">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <span class="num" data-val="275">000</span>
+                <span class="text">Theo dõi</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+        })
+        console.log(window);
+    </script>
+    </div>
+    <div class="stock" style="background-image: url(index/image/parallax3.jpg);">
+        <h1>
+            <p>Xem gì bây giờ!</p> <br>TIN TỨC THỜI TRANG
+        </h1>
+    </div>
+    <div class="fashion_week">
+        <div class="infomation">
+            <div class="box_size">
+                <div class="imgBX">
+                    <img src="index/image/11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>NỔI BẬT TRÊN GIOIA</h3>
+                    <p>Sự nổi bật của GIOIA đã đem đến cho người dùng hàng loạt thời trang mới lạ. Tạo nên cơn sốt cho
+                        ngành thời trang ...</p>
+                    <a href="#">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="box_size">
+                <div class="imgBX">
+                    <img src="index/image/13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>THỜI TRANG MÙA HÈ</h3>
+                    <p>Hiện tại mùa hè cũng đã đến, cùng GIOIA đón nhận các sản phẩm mùa hè độc đáo để đón chào mùa hè
+                        này nào.</p>
+                    <a href="#">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="box_size">
+                <div class="imgBX">
+                    <img src="index/image/14.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>THỜI TRANG TUẦN</h3>
+                    <p>Bạn boăn khoăn không biết lựa chọn đồ để mặc mỗi ngày, đến với GIOIA, chúng tôi sẽ cho bạn hàng
+                        loạt gợi ý thời trang.</p>
+                    <a href="#">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infomation_person" id="support">
+        <div class="title">
+            <h1>ĐĂNG KÝ THÔNG TIN HỖ TRỢ</h1>
+        </div>
+        <div class="email">
+            <div class="but">
+                <input type="text" placeholder="Địa chỉ Email">
+            </div>
+        </div>
+        <div class="buton">
+            <button class="btn btn1">Gửi</button>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="coating">
+        <div class="coat_one">
+            <h1>GIOIA
+            </h1>
+        </div>
+        <div class="coat_two">
+            <div class="flix one">
+                <article>CÔNG TY</article>
+                <p>
+                    Giới thiệu <br>
+                    Chúng tôi đang thuê <br>
+                    Chương trinhg liên kết <br>
+                    Các đường liên kết <br>
+                    Tài khoản doanh nghiệp
+                </p>
+            </div>
+            <div class="flix two">
+                <article>HỖ TRỢ</article>
+                <p>
+                    Gửi email cho chúng tôi <br>
+                    Giúp đỡ và FAQ <br>
+                    Thực hiện trở lại <br>
+                    Chính sách liên kết <br>
+                    Giỏ quà
+                </p>
+            </div>
+            <div class="flix three">
+                <article>LIÊN KẾT NHANH</article>
+                <p>
+                    Điều khoan và điều kiện <br>
+                    Chính sách bảo mật <br>
+                    Chi nhánh <br>
+                    Chính sách hoàn trả
+                </p>
+            </div>
+            <div class="flix four">
+                <article>LIÊN KẾT</article>
+                <p>
+                    1 Wintergreen Dr.Huntley IL 60142, Usa <br>
+                    duyhoa102201@gmail.com<br>
+                    0328487011
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="model" id="model">
+        <ion-icon name="close-circle-outline" onclick="off_qc()"></ion-icon>
+        <div class="qc">
+            <h1>
+                <div style="font-size: 60px;">
+                    Ưu thích nhất
+                </div>
+                Lender - Hinocl
+            </h1>
+        </div>
+    </div>
+    <script>
+        function qc() {
+            document.getElementById("menu").style = `display : none`;
+            document.getElementById('model').style =
+                `
+            display : block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.853);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            `;
+        }
+        function off_qc() {
+            document.getElementById("menu").style = `display : block; 
+            width: 100%;
+            height: 3em;
+            background: #064635;
+            justify-content: center;
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            `;
+            document.getElementById('model').style = `display : none`;
+        }
+    </script>
+</body>
+
+
+</html>
