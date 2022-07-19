@@ -1,0 +1,261 @@
+*
+{
+    font-family: monospace;
+}
+.box_product
+{
+    width: 100%;
+    height: 200vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.check_product
+{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shop_product
+{
+    height: 100%;
+    width: 75%;
+}
+.suggest
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_el
+{
+    width: 80%;
+    margin-left: 150px;
+    height: 90%;
+    border: 3px solid #064635;
+}
+.suggest input
+{
+    width: 250px;
+    height: 35px;
+    margin-left: 80px;
+    background: #064635;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 0.9em;
+    color: #FFFBE9;
+    transition: 0.5s;
+}
+.suggest input:hover, select:hover{
+    box-shadow: 5px 5px 5px 0 #373737;
+}
+.suggest select
+{
+    width: 250px;
+    height: 35px;
+    margin-left: 80px;
+    background: #064635;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #FFFBE9;
+    transition: 0.5s;
+    font-size: 0.9em;
+}
+.suggest input::placeholder
+{
+    text-align: center;
+    color: #FFFBE9;
+}
+.product_row
+{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    right: 40px;
+}
+.vlproduct
+{
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+    margin-left: 80px;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    border: 5px solid #064635;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.vlproduct h1
+{
+    color: #00FFAB;
+    transform: translateY(230px);
+    transition: 0.5s;
+}   
+.vlproduct p
+{
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-top: 10px;
+    border-radius: 30px;
+    transform: translateY(230px);
+    transition: 0.5s;
+}
+.vlproduct button
+{
+    margin-top: 30px;
+    background: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #064635;
+    font-weight: 600;
+    transition: 0.5s;
+    transform: translateY(230px);
+}
+.vlproduct button:hover
+{
+    background: #00FFAB;
+    color: #21242B;
+}
+.vlproduct:hover h1,.vlproduct:hover p,.vlproduct:hover button
+{
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+.image_product
+{
+    width: 100%;
+    height: 75%;
+}
+.info_vlproduct
+{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.info_x
+{
+    width: 65%;
+    height: 100%;
+}
+.info_x h3
+{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.info_x p
+{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.info_x button
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: #AD8B73;
+    color: #FFFBE9;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.info_x button:hover
+{
+    background: #1e1e1e;
+    color: rgb(255, 255, 255);
+}
+.box_info
+{
+    width: 80%;
+    height: 15%;
+    margin-top: 20px;
+    border-bottom: 2px solid #064635;
+}
+.box_info h1
+{
+    text-transform: uppercase;
+    font-family:monospace;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+}
+.box_info input
+{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    width: 200px;
+    -webkit-appearance: none;
+    background :#00FFAB;
+    border-radius: 250px;
+    height: 10px;
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2);
+}
+.box_info p
+{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 200px;
+    font-family: monospace;
+    font-size: 16px;
+}
+.box_info button
+{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    width: 130px;
+    height: 35px;
+    background: none;
+    border: none;
+    background: none;
+    color: #064635;
+    border: 2px solid #064635;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.box_info button:hover
+{
+    transform: scale(1.1);
+    background: #21242B;
+    color: #00FFAB;
+}
+.box_info h5
+{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+}

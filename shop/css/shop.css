@@ -1,0 +1,454 @@
+.banner
+{
+    width: 100%;
+    height: 500px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_banner
+{
+    width: 98%;
+    height: 95%;
+    border: 3px solid #fff;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes zoomout
+{
+    from
+    {
+        transform: scale(1,1);
+    }
+    to
+    {
+        transform: scale(1.5,1.5);
+    }
+}
+.title_banner img
+{
+    width: 100%;
+    animation: zoomout 20s linear infinite;
+}
+.text_box
+{
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.text_box h1
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-style: italic;
+    animation: text 20s linear infinite;
+    font-family: 'Alegreya', serif;
+}
+.text_box span
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+}
+@keyframes text
+{
+    from
+    {
+        position: relative;
+        left: 0;
+    }
+    to
+    {
+        position: relative;
+        left: 100px;
+    }
+}
+.contact
+{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+}
+.contact_list
+{
+    width: 13%;
+    height: 120px;
+    margin-left: 100px;
+    position: relative;
+    top: 50px;
+    box-shadow:  1px 2px 60px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s linear;
+    border: 2px solid #064635;
+    flex-direction: column;
+}
+.contact_list:hover
+{
+    transform: scale(1.1);
+    background: #21242b ;
+    border: 2px solid #fff;
+}
+.contact_list:hover p
+{
+    transform: translateY(-40px);
+    color: #00FFAB;
+}
+
+.contact_list p
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: transform linear 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact_list:hover ion-icon
+{
+    color: #00FFAB;
+    transform:  translateY(20px);
+}
+.contact_list ion-icon
+{
+    font-size: 40px;
+    color: #064635;
+    position: relative;
+    transition: transform linear 0.5s;
+    position: relative;
+    top: 10px;
+}
+.banner_newproduct
+{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+.model
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.model_banner
+{
+    width: 50%;
+    height: 100%;
+}
+.model_banner img
+{
+    width: 61.9%;
+    position: relative;
+    left: 50px;
+}
+.info_product_model
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box_info
+{
+    width: 70%;
+    height: 60%;
+    background: #21242b;
+    position: relative;
+    left: 140px;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+}
+.box_info h5
+{
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+.box_info h3
+{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+.box_info h4
+{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #fff;
+}
+.box_info p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #fff;
+}
+.box_info a
+{
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    padding: 7px 20px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box_info a:hover
+{
+    background: #21242b;
+    border: 2px solid #00FFAB;
+    color: #00FFAB;
+}
+
+.sl_product:hover
+{
+    transform: scale(1.1);
+}
+.my_product
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.my_product-baner
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_product-banner-img
+{
+    width: 70%;
+    height: 90%;
+    border-radius: 10px;
+    background-image: url(../image/banner-imBX.jpg);
+    background-size: cover;
+    border: 3px solid #064635;
+    background-position-x: -50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.my_product-banner-img h3,u
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #fff;
+    transition: 1.5s;
+    position: relative;
+    left: -300px;
+}
+.my_product-banner-img:hover h3,u
+{
+    position: relative;
+    left: 0;
+}
+.my_product-mini_product
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-product
+{
+    width: 23%;
+    height: 60%;
+    margin-left: 100px;
+    border-radius: 5px;
+    position: relative;
+    right: 100px;
+}
+.my_product-mini_product-mysp
+{
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    position: relative;
+    right: 100px;
+    border-radius: 5px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #064635;
+    overflow: hidden;
+    transition: 0.5;
+}
+.my_product-mini_product-mysp:hover .my_product-mini_product_name 
+{
+    position: relative;
+    top: -80px;
+}
+.my_product-mini_product_name 
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    transition: 0.5s linear;
+}
+.my_product-mini_product_name h3
+{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.my_product-mini_product_name a
+{
+    text-decoration: none;
+    padding: 7px 15px;
+    background: #fff;
+    font-size: 14px;
+    transition: 0.5s;
+    margin-top: 50px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #064635;
+}
+.my_product-mini_product_name a:hover
+{
+    background: #21242b;
+    border: 2px solid #00FFAB;
+    color: #00FFAB;
+}
+.sale-product
+{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale-product_box
+{
+    width: 92%;
+    height: 95%;
+    border: 10px solid #21242b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale-product_box_imgBX
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale-product_box_imgBX img
+{
+    width: 110%;
+    position: relative;
+    right: 20px;
+    border-radius: 3px;
+}
+.sale-product_box_info
+{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sale-product_box_info h4 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: #064635;
+    position: relative;
+    left: 50px;
+    bottom: 120px;
+}
+.sale-product_box_info h2 i
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #064635;
+    position: relative;
+    left: 50px;
+    bottom: 120px;
+}
+.sale-product_box_info h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #064635;
+    position: relative;
+    left: 50px;
+    bottom: 70px;
+}
+.sale-product_box_info span
+{
+    padding: 10px 5px;
+    background: #21242b;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.sale-product_box_info a
+{
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 135px;
+    border-radius: 3px;
+    height: 45px;
+    background: #064635;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.sale-product_box_info a:hover
+{
+    background: #21242b;
+    color: #00FFAB;
+    border: 3px solid #00FFAB;
+}
+#support
+{
+    margin-top: 50px;
+}

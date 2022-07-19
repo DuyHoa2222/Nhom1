@@ -1,0 +1,121 @@
+body
+{
+    background: #064635;
+    display: flex;
+}
+.background-image
+{
+    width: 65%;
+    height: 100vh;
+}
+.background-form
+{
+    width: 35%;
+    height: 100vh;
+    background-image: url(../image/2.jpg);
+    background-size: cover;
+}
+.logo
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo a
+{
+    font-size: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+    left: 6%;
+}
+.form
+{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form_sign_in
+{
+    width: 87%;
+    height: 90%;
+    border: 5px solid #ffffff;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_sign_in
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box_sign_in h1
+{
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    bottom: 30px;
+}
+input
+{
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 2px;
+    border: 3px solid #21242b;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+button
+{
+    width: 135px;
+    height: 40px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.but a
+{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    transition: 0.5s;
+}
+button:hover
+{
+    background: #ffffff;
+}
+button:hover a
+{
+    color: #21242b;
+}
+.input em
+{
+    color: red;
+    position: relative;
+    width: 345px;
+    display: flex;
+    align-items: flex-end;
+    height: 30px;
+}
