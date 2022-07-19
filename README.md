@@ -1,2 +1,0 @@
-# Nhom1
-abcxyz
